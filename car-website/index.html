@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Second Hand Car Rental Booking</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="bg-gradient">
+    <div class="container p-5 mt-4 bg-white rounded shadow-lg">
+        <h1 class="text-center mb-5 text-dark">Second Hand Car Rental Booking</h1>
+
+        <!-- Filter Section -->
+        <form action="#" method="GET" class="mb-5">
+            <div class="row g-4">
+                <!-- Filter by Price -->
+                <div class="col-md-4">
+                    <label for="price" class="form-label">Filter by Rent Price (₹/day):</label>
+                    <select class="form-select" id="price" name="price">
+                        <option value="">Select Price</option>
+                        <option value="below1000">Below ₹1,000</option>
+                        <option value="1000-2000">₹1,000 - ₹2,000</option>
+                        <option value="2000-5000">₹2,000 - ₹5,000</option>
+                        <option value="above5000">Above ₹5,000</option>
+                    </select>
+                </div>
+
+                <!-- Filter by Brand -->
+                <div class="col-md-4">
+                    <label for="brand" class="form-label">Filter by Brand:</label>
+                    <select class="form-select" id="brand" name="brand">
+                        <option value="">Select Brand</option>
+                        <option value="maruti">Maruti</option>
+                        <option value="hyundai">Hyundai</option>
+                        <option value="honda">Honda</option>
+                        <option value="ford">Ford</option>
+                        <option value="bmw">BMW</option>
+                    </select>
+                </div>
+
+                <!-- Filter by Type -->
+                <div class="col-md-4">
+                    <label for="type" class="form-label">Filter by Type:</label>
+                    <select class="form-select" id="type" name="type">
+                        <option value="">Select Type</option>
+                        <option value="suv">SUV</option>
+                        <option value="sedan">Sedan</option>
+                        <option value="hatchback">Hatchback</option>
+                        <option value="convertible">Convertible</option>
+                    </select>
+                </div>
+            </div>
+            <button type="submit" class="btn btn-success mt-4">Apply Filter</button>
+        </form>
+
+        <!-- Car Listings -->
+        <div class="row g-4">
+            <!-- Car 1 -->
+            <div class="col-md-3 car">
+                <img src="assets/car1.jpg" alt="Maruti SUV" class="img-fluid rounded mb-2">
+                <h5 class="text-dark">Maruti SUV</h5>
+                <p>Rent Price: ₹1,200/day</p>
+                <button class="btn btn-primary">Book Now</button>
+            </div>
+
+            <!-- Car 2 -->
+            <div class="col-md-3 car">
+                <img src="assets/car2.jpg" alt="Hyundai Sedan" class="img-fluid rounded mb-2">
+                <h5 class="text-dark">Hyundai Sedan</h5>
+                <p>Rent Price: ₹2,500/day</p>
+                <button class="btn btn-primary">Book Now</button>
+            </div>
+
+            <!-- Car 3 -->
+            <div class="col-md-3 car">
+                <img src="assets/car3.jpg" alt="Ford Hatchback" class="img-fluid rounded mb-2">
+                <h5 class="text-dark">Ford Hatchback</h5>
+                <p>Rent Price: ₹1,800/day</p>
+                <button class="btn btn-primary">Book Now</button>
+            </div>
+
+            <!-- Car 4 -->
+            <div class="col-md-3 car">
+                <img src="assets/car4.jpg" alt="BMW Convertible" class="img-fluid rounded mb-2">
+                <h5 class="text-dark">BMW Convertible</h5>
+                <p>Rent Price: ₹4,500/day</p>
+                <button class="btn btn-primary">Book Now</button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
